@@ -1,5 +1,6 @@
 <div align="center">
 <h1>📐 Design-Challenges 📐 </h1>
+  <i>Several design challenges from several websites</i>
 </div>
 
 <h3>Why This Repo Exist? 🤔</h3>
