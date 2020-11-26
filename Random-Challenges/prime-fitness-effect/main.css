@@ -7,9 +7,9 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content: url("images/entertainments.jpg")
-    url("images/franchise-bg-mobile.jpg") url("images/incirli.jpg")
-    url("images/veliefendi-mobile.jpg");
+  content: url("images/entertainments.webp")
+    url("images/franchise-bg-mobile.webp") url("images/incirli.webp")
+    url("images/veliefendi-mobile.webp");
 }
 
 * {
@@ -77,22 +77,22 @@ body {
 }
 
 .veliefendi {
-  background: url("images/veliefendi-mobile.jpg");
+  background: url("images/veliefendi-mobile.webp");
   background-position: top;
 }
 
 .incirli {
-  background: url("images/incirli.jpg");
+  background: url("images/incirli.webp");
   background-position: top;
 }
 
 .entertainments {
-  background: url("images/entertainments.jpg");
+  background: url("images/entertainments.webp");
   background-position: top;
 }
 
 .franchise {
-  background: url("images/franchise-bg-mobile.jpg");
+  background: url("images/franchise-bg-mobile.webp");
   background-position: top;
 }
 
