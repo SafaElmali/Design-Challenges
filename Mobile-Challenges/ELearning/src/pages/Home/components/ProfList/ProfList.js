@@ -1,13 +1,13 @@
 import React from 'react';
 import { ScrollView, View } from 'react-native';
-import Avatar from '../../Styled-Components/Avatar';
-import StyledText from '../../Styled-Components/Text';
-import ProfOneSVG from '../../../assets/images/prof-1.svg';
-import ProfTwoSVG from '../../../assets/images/prof-2.svg';
-import ProfThreeSVG from '../../../assets/images/prof-3.svg';
-import ProfFourSVG from '../../../assets/images/prof-4.svg';
+import Avatar from '../../../../Styled-Components/Avatar';
+import StyledText from '../../../../Styled-Components/Text';
+import ProfOneSVG from '../../../../../assets/images/prof-1.svg';
+import ProfTwoSVG from '../../../../../assets/images/prof-2.svg';
+import ProfThreeSVG from '../../../../../assets/images/prof-3.svg';
+import ProfFourSVG from '../../../../../assets/images/prof-4.svg';
 import ContentHeader from '../ContentHeader';
-import Container from '../../Styled-Components/Container';
+import Container from '../../../../Styled-Components/Container';
 
 const ProfList = _ => (
     <Container>

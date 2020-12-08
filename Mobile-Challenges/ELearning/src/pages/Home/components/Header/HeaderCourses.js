@@ -1,9 +1,9 @@
 import React from 'react'
 import { View } from "react-native"
-import RoundedCard from '../../Styled-Components/Card';
-import BackendSVG from '../../../assets/images/backend.svg';
-import FrontendSVG from '../../../assets/images/frontend.svg';
-import StyledText from '../../Styled-Components/Text';
+import RoundedCard from '../../../../Styled-Components/Card';
+import BackendSVG from '../../../../../assets/images/backend.svg';
+import FrontendSVG from '../../../../../assets/images/frontend.svg';
+import StyledText from '../../../../Styled-Components/Text';
 
 const HeaderCourses = () => (
     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', position: 'absolute', bottom: -50, right: 0, left: 0 }}>
