@@ -5,7 +5,7 @@ import StyledText from '../../../Styled-Components/Text';
 import RightArrow from '../../../../assets/images/right-arrow.svg';
 
 const ContentHeader = ({ text }) => (
-    <View style={{ marginVertical: 15, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+    <View style={{ marginVertical: 15, marginHorizontal: 10, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
         <StyledText color={"#243C60"} fontSize={"18px"} fontWeight={"bold"}>
             {text}
         </StyledText>
