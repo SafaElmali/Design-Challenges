@@ -1,12 +1,12 @@
-import React from 'react';
-import RoundedCard from '../Styled-Components/Card';
-import StyledText from '../Styled-Components/Text';
-import { View } from 'react-native';
-import BackendSVG from '../../assets/images/backend.svg';
-import FrontendSVG from '../../assets/images/frontend.svg';
+import React from 'react'
+import { View } from "react-native"
+import RoundedCard from '../../Styled-Components/Card';
+import BackendSVG from '../../../assets/images/backend.svg';
+import FrontendSVG from '../../../assets/images/frontend.svg';
+import StyledText from '../../Styled-Components/Text';
 
-const Header = (props) => (
-    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
+const HeaderCourses = () => (
+    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', position: 'absolute', bottom: -50, right: 0, left: 0 }}>
         <RoundedCard backgroundColor={"#7EEEAE"}>
             <View style={{ padding: 10 }}>
                 <StyledText color={"#243C60"} fontSize={"24px"} fontWeight={"600"}>Backend</StyledText>
@@ -28,4 +28,4 @@ const Header = (props) => (
     </View>
 )
 
-export default Header;
+export default HeaderCourses;
