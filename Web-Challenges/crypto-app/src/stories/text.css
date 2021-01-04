@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+.storybook-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  line-height: 84px;
+  letter-spacing: -2%;
+}
+
+.storybook-text--h2 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.storybook-text--h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.storybook-text--h4 {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 27.85px;
+}
+
+.storybook-text--h5 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.15px;
+}

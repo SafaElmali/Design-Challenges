@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(234, 235, 238);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn {
+  font-family: "Merriweather", serif;
+  font-size: 0.7em;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 125px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 6em;
+  width: 90vw;
+  margin: 2em 0;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 536px) {
+    width: 100vw;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 3em;
+  }
+}
+
+.header__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.15em;
+}
+
+.header__subtitle {
+  font-family: "Merriweather", serif;
+  font-size: 2em;
+}
+
+.content {
+  display: flex;
+
+  @media screen and (max-width: 1074px) {
+    flex-direction: column;
+  }
+}
+
+.card-left__footer {
+  .btn {
+    margin: 2em 0;
+    color: #1b2455;
+    border: 1px solid;
+    border-color: #151e4b;
+  }
+}
+
+.grid {
+  display: flex;
+
+  @media screen and (max-width: 536px) {
+    flex-direction: column;
+  }
+}
+
+.grid__item {
+  color: #232846;
+
+  h4 {
+    font-weight: bold;
+  }
+}
+
+.grid__item + .grid__item {
+  margin-top: 20px;
+
+  @media screen and (min-width: 536px) {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+}
+
+.card-right {
+  background-color: #151e4b;
+  color: #fff;
+  padding: 2em;
+  min-width: 200px;
+  border-radius: 10px;
+  -moz-box-shadow: 5px 28px 25px -3px #7e87b5;
+  box-shadow: 5px 28px 25px -3px #7e87b5;
+  font-size: 1rem;
+  max-height: 450px;
+  margin-left: 1em;
+
+  @media screen and (max-width: 1074px) {
+    margin-left: 0;
+  }
+}
+
+.card-right__header {
+  font-family: "Merriweather", serif;
+}
+
+.card-right__footer {
+  margin-top: 3em;
+}
+
+.line {
+  background-color: #151e4b;
+  height: 0.5em;
+  width: 4em;
+  position: absolute;
+  right: -20px;
+  bottom: 15px;
+}
+
+.box {
+  background-color: #151e4b;
+  padding: 2em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20em;
+  z-index: -1;
+  width: 65vw;
+
+  @media screen and(max-width:700px) {
+    display: none;
+  }
+}
