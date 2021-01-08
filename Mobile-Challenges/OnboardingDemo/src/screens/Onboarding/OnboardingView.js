@@ -12,7 +12,7 @@ const OnboardingView = ({ to, onboardImage, text1, text2, goNextOnboardView, vie
                 {onboardImage}
             </View>
             <View style={{ flex: 0.2, justifyContent: 'center', marginTop: 40, alignItems: 'center' }}>
-                <Text style={{ fontSize: 20, fontWeight: "bold", width: 184, textAlign: 'center' }}>{text1}</Text>
+                <Text style={{ fontSize: 22, fontWeight: "700", width: 184, textAlign: 'center', color: '#282C38' }}>{text1}</Text>
             </View>
             <View style={{ flex: 0.3, alignItems: 'center', justifyContent: 'flex-start' }}>
                 <Text style={{ fontSize: 16, fontWeight: "normal", width: 250, textAlign: 'center' }}>{text2}</Text>
@@ -22,7 +22,7 @@ const OnboardingView = ({ to, onboardImage, text1, text2, goNextOnboardView, vie
                     <TouchableOpacity onPress={to} style={{ height: 30 }}>
                         <Text style={{ fontSize: 16, color: '#7D8496' }}>Skip</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={{height:50}} onPress={() => viewPagerRef.current.setPage(page)}>
+                    <TouchableOpacity style={{ height: 50 }} onPress={() => viewPagerRef.current.setPage(page)}>
                         <View style={{ width: 100 }}>
                             <View
                                 style={{
