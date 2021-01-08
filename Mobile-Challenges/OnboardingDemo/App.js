@@ -10,7 +10,11 @@ const Stack = createStackNavigator();
 
 const Screens = () => {
   return (
-    <Stack.Navigator initialRouteName="Onboard">
+    <Stack.Navigator initialRouteName="Onboard"
+      screenOptions={{
+        headerShown: false
+      }}
+    >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Onboard" component={OnBoarding} />
     </Stack.Navigator>
