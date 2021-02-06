@@ -12,3 +12,6 @@
 
 <p>Feel free to make pull requests to help me to improve my 💩 codes! 🥳 </p>
 
+## License
+
+design-challenges is [MIT licensed](./LICENSE).
