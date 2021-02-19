@@ -1,15 +1,15 @@
 import data from "../../data/data";
-import ApiListItem from "./components/ApiListItem";
+import ContentListItem from "./components/ContentListItem.jsx";
 
 const Content = () => {
   return (
-    <section class="content">
-      <div class="content__title">
+    <section className="content">
+      <div className="content__title">
         <p>Featured APIs of this week</p>
       </div>
-      <div class="content__list">
-        {data.map((item) => {
-          return <ApiListItem item={item} />;
+      <div className="content__list">
+        {data.map((item,index) => {
+          return <ContentListItem item={item} key={index} />;
         })}
       </div>
     </section>
