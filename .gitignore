@@ -117,4 +117,5 @@ dist
 
 # Other
 .vscode
+.DS_Store
 /*/.DS_Store

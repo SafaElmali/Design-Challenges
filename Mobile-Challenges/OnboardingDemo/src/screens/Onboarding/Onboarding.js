@@ -1,33 +1,37 @@
-import React, { useRef, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, {useRef} from 'react';
+import {StyleSheet, View} from 'react-native';
 import ViewPager from '@react-native-community/viewpager';
-import { OnboardingFirstImage, OnboardingSecondImage, OnboardingThirdImage } from '../../components/OnboardingImages';
+import {
+  OnboardingFirstImage,
+  OnboardingSecondImage,
+  OnboardingThirdImage,
+} from '../../components/OnboardingImages';
 import OnboardingView from './OnboardingView';
-import { useEffect } from 'react';
 
-const OnBoarding = ({ navigation }) => {
+const OnBoarding = ({navigation}) => {
   const viewPager = useRef();
-  
+
   return (
-    <ViewPager
-      ref={viewPager}
-      style={styles.viewPager}
-      initialPage={0}>
-      <View key="1" style={{ flex: 1 }}>
+    <ViewPager ref={viewPager} style={styles.viewPager} initialPage={0}>
+      <View key="1">
         <OnboardingView
           onboardImage={<OnboardingFirstImage />}
-          text1={"Connect multiple accounts"}
-          text2={"Stay connected to any platform you are used to. Starting from Twitter, instagram, Slack or whatever."}
+          title={'Connect multiple accounts'}
+          detail={
+            'Stay connected to any platform you are used to. Starting from Twitter, instagram, Slack or whatever.'
+          }
           to={() => navigation.navigate('Home')}
           viewPagerRef={viewPager}
           page={1}
         />
       </View>
-      <View key="2" style={{ flex: 1 }}>
+      <View key="2">
         <OnboardingView
           onboardImage={<OnboardingSecondImage />}
-          text1={"Smart messaging system"}
-          text2={"View your messages without leaving the video you currently watched."}
+          title={'Smart messaging system'}
+          detail={
+            'View your messages without leaving the video you currently watched.'
+          }
           to={() => navigation.navigate('Home')}
           viewPagerRef={viewPager}
           page={2}
@@ -36,8 +40,10 @@ const OnBoarding = ({ navigation }) => {
       <View key="3">
         <OnboardingView
           onboardImage={<OnboardingThirdImage />}
-          text1={"Instant data analysis"}
-          text2={"View and analyse all your activities grouped systematically for you to get conclusions."}
+          title={'Instant data analysis'}
+          detail={
+            'View and analyse all your activities grouped systematically for you to get conclusions.'
+          }
           to={() => navigation.navigate('Home')}
         />
       </View>
